@@ -34,7 +34,9 @@ class MediaHeader extends StatelessWidget {
                     Row(
                       children: [
                         IconButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
                           icon: const Icon(Icons.keyboard_arrow_down,size: 30,),
                           color: kBlack,
                         ),
