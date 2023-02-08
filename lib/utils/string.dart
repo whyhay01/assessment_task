@@ -1,0 +1,13 @@
+const appName ="Assessment Test";
+const welcome = "Hi, Sarah";
+const quickActions = "Quick Actions";
+const completeReg = "Go to your profile to complete registration";
+const upcomingSession = "Upcoming Session (0)";
+const tipToStayHealthy = "Tips to stay healthy";
+const getSimpleHealthTips = "Get simple health tips.";
+const community = "Community";
+const motivated = "Stay Motivated Ep. 1";
+const reasons = "10 reasons ";
+const stayInspired = "Stay Inspired- Episode 1 ";
+const transcript = "Transcript";
+const expand = "EXPAND";
