@@ -23,40 +23,32 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     List<Widget> homeScreenDisplay = <Widget>[
-      Home(),
-      Resources(),
-      Session(),
-      Community(),
-      Account()
+      const Home(),
+      const Resources(),
+      const Session(),
+      const Community(),
+      const Account()
     ];
 
     List<BottomNavigationBarItem> bottomNavigationItem = [
       const BottomNavigationBarItem(
           icon: Icon(
             Icons.home_sharp,
-            color: kBlack,
-            size: 15,
           ),
           label: "Home"),
       const BottomNavigationBarItem(
           icon: Icon(
             Icons.navigation_outlined,
-            color: kBlack,
-            size: 15,
           ),
           label: "Resources"),
       const BottomNavigationBarItem(
           icon: Icon(
             Icons.calendar_today_outlined,
-            color: kBlack,
-            size: 15,
           ),
           label: "Session"),
       const BottomNavigationBarItem(
           icon: Icon(
             Icons.group_outlined,
-            color: kBlack,
-            size: 15,
           ),
           label: "Community"),
       BottomNavigationBarItem(
@@ -73,12 +65,15 @@ class _HomePageState extends State<HomePage> {
       ),
       backgroundColor: kScaffoldColor,
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         key: _scaffoldKey,
         items: bottomNavigationItem,
         currentIndex: _selectedIndex,
         selectedItemColor: kPrimaryColor,
         unselectedItemColor: kBlack,
-        selectedIconTheme: IconThemeData(color: kPrimaryColor),
+        selectedFontSize: 12,
+        unselectedFontSize: 12,
+        selectedIconTheme: const IconThemeData(color: kPrimaryColor),
         onTap: (int index) {
           setState(() {
             _selectedIndex = index;
